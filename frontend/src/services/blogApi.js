@@ -47,20 +47,6 @@ export const logoutUser = async () => {
 
 
 
-// Get current user
-export const getMe = async (token) => {
-  const config = {
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-  };
-  const response = await axios.get(`${API_URL}/me`, config);
-  return response.data;
-};
-
-
-
-
 // Get all posts
 export const allPosts = async () => {
   const token = localStorage.getItem("token");
@@ -86,11 +72,7 @@ export const allPosts = async () => {
   }
 };
 
-// Get single post
-export const getPost = async (id) => {
-  const response = await axios.get(`${API_URL}/${id}`);
-  return response.data;
-};
+
 
 // Create post
 export const createPost = async (postData) => {
