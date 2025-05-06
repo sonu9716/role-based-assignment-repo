@@ -13,25 +13,23 @@ This project implements Role-Based Access Control (RBAC) in a MERN stack (MongoD
  Installation & Setup
 
  Prerequisites
-- Node.js installed (`node -v`)
+- Node.js  install version 22.15.0   installed(`node -v`)
 - MongoDB (Local or Atlas)
 - Git for version control
-- concurently for running both front end backend with single command install in root folder (role-based-assignment-repo folder)
-- npm i -g concurrently
-- install dotenv package npm i dotenv
-#### RUN BOTH FRONTEND AND BACKEDND WITH COMMAND 
-npm run dev
-### Clone Repository
+
+-  ### Clone Repository
 git clone https://github.com/sonu9716/role-based-assignment-repo.git
+
 cd role-based-assignment-repo
 
-
-
+- concurently for running both front end backend with single command install in root folder (role-based-assignment-repo folder)
+- npm i -g concurrently
 
 #### Backend Setup
-1.	Navigate to the backend folder: cd backend
+1.	Navigate to the backend folder: cd .\backend\
 2.	 Install dependencies:  npm install
-3.	 Create a `.env` file in backend root directory with(Api=localhost:3000
+3.	 install dotenv package npm i dotenv
+4.	 Create a `.env` file in backend root directory with(Api=localhost:3000
 JWT_KEY=sdlkjflafjlsadfjlsafjsdlgfdsg
 PORT=3000
 MONGODB_URI="mongodb://127.0.0.1:27017/Assignment"
@@ -41,8 +39,14 @@ MONGODB_URI="mongodb://127.0.0.1:27017/Assignment"
 
 #### Frontend Setup 
 1.	Navigate to the frontend folder: cd /frontend
-2.	2. Install dependencies: npm install
-3.	3. Start the React app: npm run dev
+2.	Install dependencies: npm install
+
+
+ #### RUN BOTH FRONTEND AND BACKEDND WITH COMMAND 
+ navigate to root(role-based-assignment-repo)
+ 
+ npm run dev
+
 
 #### Architecture Breakdown
 
@@ -95,13 +99,13 @@ Frontend (React, Tailwind CSS)
 ## 📌 Key Pages & Routes
 | Page | Description | Route |
 |------|------------|-------|
-| Homepage | Landing page with login/register options. | `/` |
-| BlogPostsPage | Displays all created posts for users. | `/posts/allposts` |
-| RegisterForm | User registration page. | `/register` |
-| Login | User login page. | `/login` |
+| Homepage | Landing page with login/register options. | `http://localhost:3000/` |
+| BlogPostsPage | Displays all created posts for users. | `http://localhost:3000/posts/allposts` |
+| RegisterForm | User registration page. | `http://localhost:3000/register` |
+| Login | User login page. | `http://localhost:3000/login` |
 | AdminDashboard | Admin-only dashboard (conditional rendering). | `/adminDashboard` |
-| BlogPostEdit | Edit blog post (dynamic routing). | `/editpost/:postId` |
-| CreateBlogPost | Create a new blog post. | `/posts/createpost` |
+| BlogPostEdit | Edit blog post (dynamic routing). | `http://localhost:3000/editpost/:postId` |
+| CreateBlogPost | Create a new blog post. | `http://localhost:3000/posts/createpost` |
 
 ### Routing in `App.jsx`
  <Routes>
