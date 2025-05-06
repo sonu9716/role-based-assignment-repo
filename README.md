@@ -16,7 +16,8 @@ This project implements Role-Based Access Control (RBAC) in a MERN stack (MongoD
 - Node.js installed (`node -v`)
 - MongoDB (Local or Atlas)
 - Git for version control
-- concurently for running both front end backend with single command install in root folder (role-based-assignment-repo folder) npm i -g concurrently
+- concurently for running both front end backend with single command install in root folder (role-based-assignment-repo folder)
+- npm i -g concurrently
 - install dotenv package npm i dotenv
 #### RUN BOTH FRONTEND AND BACKEDND WITH COMMAND 
 npm run dev
